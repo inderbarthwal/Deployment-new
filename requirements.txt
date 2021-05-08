@@ -7,7 +7,7 @@ MarkupSafe==1.1.1
 numpy==1.20.2
 opencv-python==4.5.2.52
 Pillow==8.2.0
-torch==1.7.1
+cpu/torch-1.8.1-cp39-cp39-manylinux2014_aarch64.whl
 torchaudio==0.8.1
 torchvision==0.9.1
 typing-extensions==3.10.0.0
