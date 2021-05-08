@@ -1,0 +1,42 @@
+
+from flask import Flask, redirect, url_for, request, jsonify, render_template
+import os
+import glob
+import ResNet_arch as arch
+import sys
+from werkzeug.utils import secure_filename
+from test import test1
+
+ 
+
+app = Flask(__name__)
+
+
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+@app.route('/Upload',methods=['POST'])
+def uploads():
+    if request.method == 'POST':
+
+        f = request.files['file']
+
+        basepath = os.path.dirname(__file__)
+        file_path = os.path.join(
+            basepath, 'LR', secure_filename(f.filename))
+        f.save(file_path)
+        test1()
+
+        return render_template("base.html", name=f.filename)
+    return None
+
+    
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+
+
+
