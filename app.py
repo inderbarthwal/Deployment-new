@@ -28,7 +28,7 @@ def uploads():
         f.save(file_path)
         test1()
 
-        return render_template("base.html", name=f.filename)
+        return render_template("base.html")
     return None
 
     
