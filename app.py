@@ -12,7 +12,7 @@ from test import test1
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/',methods=['GET','POST'])
 def home():
     return render_template('index.html')
 
