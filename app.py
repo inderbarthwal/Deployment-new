@@ -12,11 +12,11 @@ from test import test1
 app = Flask(__name__)
 
 
-@app.route('/',methods=['GET','POST'])
+@app.route('/',methods=['GET'])
 def home():
     return render_template('index.html')
 
-@app.route('/Upload',methods=['POST'])
+@app.route('/Upload',methods=['GET','POST'])
 def uploads():
     if request.method == 'POST':
 
