@@ -1,11 +1,10 @@
-
 from flask import Flask, redirect, url_for, request, jsonify, render_template
 import os
 import glob
 import ResNet_arch as arch
-import sys
+
 from werkzeug.utils import secure_filename
-from test import test1
+from test import predict, test1
 
  
 
@@ -20,18 +19,17 @@ def home():
 def uploads():
     if request.method == 'POST':
 
-        f = request.files['file']
+        f = request.files['file']           
 
         basepath = os.path.dirname(__file__)
         file_path = os.path.join(
             basepath, 'LR', secure_filename(f.filename))
         f.save(file_path)
-        test1()
 
-        return render_template("base.html", name=f.filename)
+        x = test1()
+
+        return render_template("base.html", name = x + ".png")
     return None
-
-    
 
 
 if __name__ == '__main__':
