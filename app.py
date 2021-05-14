@@ -4,7 +4,7 @@ import glob
 import ResNet_arch as arch
 
 from werkzeug.utils import secure_filename
-from test import predict, test1
+from test import test1
 
  
 
