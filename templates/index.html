@@ -7,13 +7,14 @@
     <title>MRI RESOLUTION UPGRADER</title>
 </head>
 <body>
+  <body style="background-color:rgb(187, 226, 10);"></body>
 <header class="text-gray-600 body-font">
   <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
     <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
         <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
       </svg>
-      <span class="ml-3 text-xl">MRI</span>
+      <span class="ml-3 text-xl">MRISR</span>
     </a>
     <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
       <a class="mr-5 hover:text-gray-900">Home</a>
@@ -22,6 +23,65 @@
     </button>
   </div>
 </header>
+<section class="text-gray-600 body-font">
+  <h1 style="font-size:300%;" align = "center">Procedure </h1>
+  <div class="container px-5 py-24 mx-auto flex flex-wrap">
+
+    <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
+    
+      <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+        <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+      </div>
+      <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">1</div>
+      <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+        <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+        </div>
+        <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+          <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Upload</h2>
+          <p class="leading-relaxed">Choose an image and click Upload Button</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+      <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+        <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+      </div>
+      <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">2</div>
+      <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+        <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+          </svg>
+        </div>
+        <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+          <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Wait</h2>
+          <p class="leading-relaxed">Wait for sometime to check result</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+      <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+        <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+      </div>
+      <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">3</div>
+      <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+        <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+            <circle cx="12" cy="5" r="3"></circle>
+            <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
+          </svg>
+        </div>
+        <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+          <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Result</h2>
+          <p class="leading-relaxed">Check enhanced Image</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="text-gray-600 body-font">
   <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
@@ -34,7 +94,7 @@
             <label for="imageUpload" class="upload-label">
                 Select your file...
             </label>
-            <input type="file" name="file" id="imageUpload" accept=".nii, .jpg">
+            <input type="file" name="file" id="imageUpload" accept=".nii, .jpg, .jpeg">
             <button type="submit" class="ml-4 inline-flex text-red-900 bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-500 rounded text-lg" id="btn-upload">Upload</button>
         </form>
     
@@ -48,6 +108,62 @@
     </div>  
   </div>
 </section>
+
+<section class="text-gray-400 bg-gray-900 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h1 class="text-2xl font-medium title-font mb-4 text-white tracking-widest">OUR TEAM</h1>
+    </div>
+    <div class="flex flex-wrap -m-4">
+      <div class="p-4 lg:w-1/2">
+        <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+          <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://lh3.googleusercontent.com/mJGgAatJHZ6P7RHY4o4htlJ12OYijXPLb2l6cwVjOVJNsmKvuzwY8LdQPjxGnR7nB4pzooIvtGAioa9MJV6jjD8ef2PCdX03jncosM5h8cDvup2JNL14DTtx7oNUIODh7jlv5AyksXvf-g3SjAolavoFPGE3CghZQ9mvrlMPlljSWorq4hpAxS91oo4wUNahVY_MBRD4X8iCkuTp-WSUe03VNrVDcBINuofQZ3vhgqlwcg3XCOIKjsidrZETP2ps8PBYqCNcXgk93Q87iJCWIXPeimV5fq5NHqdpLnWw9S93pI_QeyClCdtPZesoAxUEFTLW-jNpPs58B-oCsfi_XIpLmby2-7Mw6LEm8akFcrFBSba87-7v2VXOjo2R4R80we9RylaUQB3utxdjAEUxbKk042hNv8rrtspHJhifhzJ2q4LQ4uWayWtKKHW_am3omnJ6ujLmQXs5SBoGm1VzlqjMvduIWToeD3ZxaLYIYulz6icH1BJzjYGtTlBgDcGTJYl6f2qHb6ghN3Hw7yOVCMnmFiqrbhZgf2I-BOOZN7kKL8kJtP0_25f5-b7ZAMaS0rwvZ5Yc6J0bkzM7JVi3Pat8DZ_sGMt_iMzNHel27ea7UwqGiHa-JJMvg1Y8XeqmySfOpdB4g54rOTPR_IMlty1bvOdBVFOan1_45XquQB9U8uqfe1zk4i8ON8JXaHHiG-ozou59tupK9Kr22qPBBA9j=w592-h789-no?authuser=0">
+          <div class="flex-grow sm:pl-8">
+            <h2 class="title-font font-medium text-lg text-white">Gautam</h2>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 lg:w-1/2">
+        <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+          <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://scontent.fdel8-1.fna.fbcdn.net/v/t1.18169-9/11999045_1487579834896194_6158860969258795514_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=19026a&_nc_ohc=U4xZMeqoqDoAX_Fzaxo&_nc_ht=scontent.fdel8-1.fna&oh=e2c10e43df6d94fb96113b951de7036b&oe=60ECDA52">
+          <div class="flex-grow sm:pl-8">
+            <h2 class="title-font font-medium text-lg text-white">Inder Barthwal</h2>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 lg:w-1/2">
+        <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+          <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://scontent.fdel8-1.fna.fbcdn.net/v/t1.18169-9/12289633_920315804727441_4642204036501725433_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=174925&_nc_ohc=lL4j85wcUDgAX-yM-iB&_nc_ht=scontent.fdel8-1.fna&oh=fd19005a2369101202d9e4411273b9ad&oe=60EC0346">
+          <div class="flex-grow sm:pl-8">
+            <h2 class="title-font font-medium text-lg text-white">Rakesh Kumar Bharti</h2>
+
+          </div>
+        </div>
+      </div>
+      <div class="p-4 lg:w-1/2">
+        <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+          <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://scontent.fdel8-1.fna.fbcdn.net/v/t31.18172-8/23800135_1948538705402884_1817958642097710475_o.jpg?_nc_cat=100&ccb=1-3&_nc_sid=174925&_nc_ohc=22ffN_Dhn9cAX8_-zjX&_nc_ht=scontent.fdel8-1.fna&oh=20b74a1224ae27fb43006acb57725e78&oe=60EB363D">
+          <div class="flex-grow sm:pl-8">
+            <h2 class="title-font font-medium text-lg text-white">Sanjay Singh</h2>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="text-gray-400 bg-gray-900 body-font">
+  <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+    <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg>
+      <span class="ml-3 text-xl">MRISR</span>
+    </a>
+
+  </div>
+</footer>
 
 </body>
 </html>
